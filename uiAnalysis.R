@@ -5,7 +5,7 @@ uiAnalysis <- function(ns){
         tabsetPanel(type='tabs',
                 tabPanel(uiOutput(ns('ctrlTrnsl_tabList')), br(),
                          span('records:'), 
-                         uiOutput('record_count', inline = TRUE)
+                         uiOutput(ns('record_count'), inline = TRUE)
                 )
         )
 }
