@@ -23,13 +23,10 @@ appServer <- function(input, output, session, tr, notif){
                 items <- readItems(app, repo_url)
                 notif$readItemsNotification(items)
                 output$record_count <- renderUI({
-                        app <- setupApp(session$userData$piaUrl,
-                                        session$userData$appKey,
-                                        session$userData$appSecret,
-                                        session$userData$keyItems)
-                        repo_url <- itemsUrl(app$url, appRepoDefault)
-                        items <- readItems(app, repo_url)
                         as.character(nrow(items))
+                })
+                output$location_items = DT::renderDataTable({
+                        items
                 })
         }
         
