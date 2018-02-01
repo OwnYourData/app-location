@@ -20,7 +20,6 @@ appServer <- function(input, output, session, tr, notif){
                                 session$userData$appSecret,
                                 session$userData$keyItems)
                 repo_url <- itemsUrl(app$url, appRepoDefault)
-                save(app, repo_url, file='tmpInv.RData')
                 items <- readItems(app, repo_url)
                 notif$readItemsNotification(items)
                 output$record_count <- renderUI({
