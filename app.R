@@ -15,6 +15,6 @@ server <- function(input, output, session) {
 shinyApp(ui = uiDesktop('oyd'), server = server)
 
 # first start
-# library(shiny); install.packages('~/oyd/oydapp/', repos=NULL, type='source'); library(oydapp); runApp('~/oyd/app-location', host='0.0.0.0', port=1252)
+# library(shiny); install.packages('~/oyd/base/oydapp/', repos=NULL, type='source'); library(oydapp); runApp('~/oyd/views/app-location', host='0.0.0.0', port=1252)
 # afterwards
-# detach('package:oydapp', unload = TRUE); install.packages('~/oyd/oydapp/', repos=NULL, type='source'); library(oydapp); runApp('~/oyd/app-location', host='0.0.0.0', port=1252)
+# detach('package:oydapp', unload = TRUE); install.packages('~/oyd/base/oydapp/', repos=NULL, type='source'); library(oydapp); runApp('~/oyd/views/app-location', host='0.0.0.0', port=1252)

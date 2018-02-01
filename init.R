@@ -25,9 +25,8 @@ install_if_missing = function(p) {
 }
 invisible(sapply(my_packages, install_if_missing))
 
-library(devtools)
-install_github('trestletech/shinyStore')
-install_github('rstudio/DT')
-install_github('hadley/scales')
-install_github('ropensci/plotly')
-install.packages('/oydapp/', repos=NULL, type='source')
+devtools::install_github('trestletech/shinyStore')
+devtools::install_github('rstudio/DT')
+devtools::install_github('hadley/scales')
+devtools::install_github('ropensci/plotly')
+devtools::install_github('ownyourdata/oydapp')

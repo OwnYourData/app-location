@@ -20,7 +20,7 @@ source('uiReport.R')
 # constants required for every app
 appName <- 'location'
 appTitle <- 'Ortsdaten'
-app_id <- 'eu.ownyourdata.location'
+app_id <- 'oyd.location'
 appRepoDefault <- app_id
 helpUrl <- 'https://www.ownyourdata.eu/apps/orte'
 
